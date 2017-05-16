@@ -7,13 +7,12 @@
         return {
             restrict: 'E',
             templateUrl: 'tmpl/ors-header.html',
-            scope: true,
             transclude: true,
             controller: function OrsHeaderCtrl($scope, $element, $attrs, $injector, $q, $filter, $http) {
                 'ngInject';
                 console.log('OrsHeaderCtrl', arguments);
             },
-            link: function() {
+            link: function () {
                 console.log('link', arguments);
             }
         };
