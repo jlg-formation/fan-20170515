@@ -11,7 +11,7 @@
                     'ng-click="update(i)" ng-src="{{getImage(i)}}"/>';
             },
             scope: {
-                n: '=note'
+                n: '=?note'
             },
             controller: function OrsHeaderCtrl($scope, $attrs) {
                 'ngInject';
@@ -25,6 +25,7 @@
                 };
                 $scope.update = function (i) {
                     console.log('update');
+                    $scope.n = i;
                 }
             }
         };
