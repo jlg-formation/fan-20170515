@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var app = angular.module('main', ['ors-star']);
+    var app = angular.module('main', ['ors-star', 'ors-route']);
 
     app.directive('orsHeader', function () {
         return {
