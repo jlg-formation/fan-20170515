@@ -7,7 +7,8 @@
         return {
             restrict: 'E',
             template: function () {
-                return '<img ng-repeat="i in [1,2,3,4,5]" ng-src="{{getImage(i)}}"/>';
+                return '<img ng-repeat="i in [1,2,3,4,5]" ' +
+                    'ng-click="update(i)" ng-src="{{getImage(i)}}"/>';
             },
             scope: {
                 n: '=note'
@@ -21,6 +22,9 @@
                         return 'ors-star/img/white_star.png';
                     }
                     return 'ors-star/img/yellow_star.png';
+                };
+                $scope.update = function (i) {
+                    console.log('update');
                 }
             }
         };
