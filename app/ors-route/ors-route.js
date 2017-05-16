@@ -3,7 +3,7 @@
 
     var app = angular.module('ors-route', ['ui.router']);
 
-    app.config(function ($stateProvider) {
+    app.config(function ($stateProvider, $urlRouterProvider) {
         'ngInject';
         $stateProvider.state({
             name: 'home',
@@ -25,6 +25,7 @@
             url: '/contact',
             templateUrl: './ors-route/tmpl/contact.html'
         });
+        $urlRouterProvider.otherwise('/');
     });
 
 })();
