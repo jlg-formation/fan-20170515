@@ -1,5 +1,24 @@
-.ng-scope {
-    /*border: 1px solid red;
+menu {
+    display: block;
+}
+menu>item {
+    display: inline-block;
+    padding: 0px;
+    margin: 10px;
+}
+menu>item>a {
+    display: block;
+    background-color: hsla(0, 100%, 90%, 1);
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    width: 100%;
     padding: 10px;
-    margin: 10px;*/
+    text-align: center;
+}
+menu>item>a:hover {
+    background-color: hsla(0, 100%, 80%, 1);
+}
+menu>item>a.active {
+    background-color: hsla(40, 100%, 80%, 1);
 }
