@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "eslint": "3.19.0",
-    "eslint-config-google": "0.7.1"
+    "eslint-config-google": "0.7.1",
+    "express": "4.15.2",
+    "serve-index": "1.8.0"
   }
 }
