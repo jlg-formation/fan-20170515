@@ -3,6 +3,8 @@
 
     var app = angular.module('ors-route', ['ui.router']);
 
+
+
     app.config(function ($locationProvider, $stateProvider, $urlRouterProvider) {
         'ngInject';
 
@@ -17,7 +19,9 @@
         $stateProvider.state({
             name: 'products',
             url: '/produits',
-            templateUrl: './ors-route/tmpl/products.html'
+            templateUrl: './ors-route/tmpl/products.html',
+            controller: 'ProductCtrl',
+            controllerAs: '$ctrl'
         });
         $stateProvider.state({
             name: 'services',
